@@ -6,11 +6,10 @@ block header
                     .footer__info
                         h2.footer__title Успей купить!
                         span Подпишись и успей словить все акции
-                    form(id="form" action='#').footer__form._reg
+                    form(id="form" action='#').footer__form.reg
                         .footer__check
                             .footer__check-input
-                                input(id="email" type='email' placeholder='Email').email
-                                span.error
+                                input(id="email" type='email' placeholder='Email').email.req
                             button(type='submit').footer__check-btn Подписаться
                         .footer__news
                             input(type='checkbox' id='check-in').footer__news-input
