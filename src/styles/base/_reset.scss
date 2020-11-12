@@ -1,0 +1,35 @@
+*{
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+input{
+  outline: none;
+  border: none;
+}
+
+input[type=checkbox] {
+  opacity: 0;
+}
+
+input:disabled{
+  background-color: inherit;
+}
+
+input:not([type=checkbox]):not([type=radio]), select, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+ul, ol{
+  list-style-type: none;
+}

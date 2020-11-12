@@ -1,0 +1,469 @@
+.cat-shop {
+  width: 100%;
+  max-width: 118rem;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding-top: 1.7rem;
+  padding-bottom: 6.3rem;
+
+  &__filter {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    span {
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.8rem;
+      letter-spacing: 0;
+      text-align: left;
+      color: #000000;
+      white-space: nowrap;
+
+      @include above($tablet) {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+      }
+    }
+
+    button {
+      width: 10.9rem;
+      height: auto;
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      position: relative;
+
+      background: #FFFFFF;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      color: #000000;
+      transition: color 0.25s;
+
+      &:first-of-type {
+        margin-right: 0.5rem;
+        margin-left: 1rem;
+
+        @include above($tablet) {
+          margin-right: 1.9rem;
+          margin-left: 4.8rem;
+        }
+      }
+
+      @include above($tablet) {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+      }
+
+      &:hover, &:focus {
+        color: $main-blue;
+
+        &::after {
+          border-bottom: 0.2rem solid $main-blue;
+          border-left: 0.2rem solid $main-blue;
+        }
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0.4rem;
+        height: 0.4rem;
+        border-bottom: 0.2rem solid #000000;
+        border-left: 0.2rem solid #000000;
+        transform: rotate(-45deg);
+        top: 0.5rem;
+        transition: border 0.25s;
+
+        @include above($tablet) {
+          width: 0.7rem;
+          height: 0.7rem;
+          top: 0.4rem;
+        }
+      }
+    }
+
+    &-price {
+      &::after {
+        left: 4.4rem;
+
+        @include above($tablet) {
+          left: 6.4rem;
+        }
+      }
+    }
+
+    &-age {
+      &::after {
+        left: 6.7rem;
+
+        @include above($tablet) {
+          left: 11rem;
+        }
+      }
+    }
+  }
+
+  &__catalogue {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 3.8rem;
+
+    @include above($tablet) {
+      justify-content: space-around;
+    }
+
+    @include above($mid-desktop) {
+      justify-content: space-between;
+    }
+
+    &-item {
+      width: 38rem;
+      height: auto;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      position: relative;
+
+      margin-bottom: 2.3rem;
+
+      @include above($tablet) {
+        width: 34rem;
+      }
+
+      @include above($tablet-landscape) {
+        width: 41rem;
+      }
+
+      @include above($mid-desktop) {
+        width: 38rem;
+      }
+
+      &-sale {
+        width: 6rem;
+        height: 3rem;
+
+        position: absolute;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        color: #FFFFFF;
+
+        background: $main-red;
+        border-radius: 1rem;
+
+        top: 2.5rem;
+        left: 2.5rem;
+
+        @include above($tablet) {
+          width: 7.8rem;
+          height: 3.9rem;
+
+          font-size: 1.6rem;
+          line-height: 2rem;
+
+          top: 3.7rem;
+          left: 3.8rem;
+        }
+      }
+
+      &-image {
+        width: 100%;
+        height: auto;
+
+        @include above($tablet) {
+          height: 26.4rem;
+        }
+      }
+
+      &-like {
+        width: 3rem;
+        height: 2.8rem;
+
+        position: absolute;
+        top: 2.8rem;
+        right: 2.5rem;
+
+        transition: fill 0.25s;
+
+        svg {
+          fill: rgba(255, 255, 255, 0.5);
+        }
+
+        &:hover, &:focus {
+          svg {
+            fill: #FFFFFF;
+          }
+        }
+
+        @include above($tablet) {
+          width: 4.6rem;
+          height: 4.2rem;
+
+          top: 3.7rem;
+          right: 3.2rem;
+        }
+      }
+
+      &-info {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        background: $main-gray;
+
+        padding: 1.5rem;
+
+        @include above($tablet) {
+          padding: 2rem 3.3rem 2.9rem 2.9rem;
+        }
+      }
+
+      &-name {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        color: #000000;
+
+        @include above($tablet) {
+          font-size: 2.4rem;
+          line-height: 2.9rem;
+        }
+      }
+
+      &-block {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-top: 2.2rem;
+      }
+
+      &-color {
+        width: 9rem;
+        height: auto;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.3rem;
+        color: #000000;
+
+        border-left: 0.4rem solid $main-blue;
+
+        padding-left: 1.8rem;
+
+        @include above($tablet) {
+          font-size: 1.2rem;
+          line-height: 1.5rem;
+        }
+      }
+
+      &-age {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        &-number {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 1.4rem;
+          line-height: 1.8rem;
+          color: #000000;
+
+          @include above($tablet) {
+            font-size: 1.6rem;
+            line-height: 2rem;
+          }
+        }
+
+        span {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 1rem;
+          line-height: 1.3rem;
+          color: #000000;
+
+          @include above($tablet) {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+          }
+        }
+      }
+
+      &-leg {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        &-number {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 1.4rem;
+          line-height: 1.8rem;
+          color: #000000;
+
+          @include above($tablet) {
+            font-size: 1.6rem;
+            line-height: 2rem;
+          }
+        }
+
+        span {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 1rem;
+          line-height: 1.3rem;
+          color: #000000;
+
+          @include above($tablet) {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+          }
+        }
+      }
+
+      &-price {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        color: #000000;
+
+        margin-top: 1.6rem;
+
+        @include above($tablet) {
+          font-size: 2.4rem;
+          line-height: 2.9rem;
+        }
+      }
+
+      &-btn {
+        width: 100%;
+        height: auto;
+
+        background: $main-blue;
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        text-align: center;
+        border-radius: 0 0 1rem 1rem;
+        border: 0.2rem solid transparent;
+
+        padding: 1.5rem 3rem;
+
+        transition: color 0.25s, background 0.25s, border 0.25s;
+
+        &:hover, &:focus {
+          color: $main-blue;
+          background: #FFFFFF;
+          border: 0.2rem solid $main-blue;
+        }
+
+        @include above($tablet) {
+          padding: 2.05rem 5.6rem;
+        }
+
+        &--disabled {
+          background: $helper-black;
+          cursor: default;
+
+          &:hover, &:focus {
+            color: #FFFFFF;
+            background: $helper-black;
+            border: 0.2rem solid transparent;
+          }
+        }
+      }
+    }
+  }
+
+  &__more {
+    width: 28rem;
+    height: 5.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: #000000;
+    background: #FFFFFF;
+
+    border: 0.1rem solid $helper-gray;
+    border-radius: 1rem;
+
+    margin-top: 4.5rem;
+
+    transition: color 0.25s, border 0.25s;
+
+    &:hover, &:focus {
+      color: $main-blue;
+      border: 0.1rem solid $main-blue;
+    }
+
+    @include above($mobile) {
+      width: 38rem;
+    }
+  }
+
+  &__sort {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include above($tablet) {
+      justify-content: space-around;
+    }
+
+    @include above($mid-desktop) {
+      justify-content: space-between;
+    }
+  }
+}

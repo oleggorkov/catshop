@@ -1,0 +1,119 @@
+include ../icon/icon
+include ../helper-mixins/svg-mix
+
+block cat-shop
+    section.section
+        .section__wrapper
+            .cat-shop
+                .cat-shop__filter
+                    span Сортировать по:
+                    button(type='button').cat-shop__filter-price Цене
+                    button(type='button').cat-shop__filter-age Возрасту
+                .cat-shop__catalogue
+                    .cat-shop__catalogue-item
+                        img(src='img/cart-3.png' alt='cat-image').cat-shop__catalogue-item-image
+                        a(href='#').cat-shop__catalogue-item-like
+                            svg(viewBox="0 0 46 42" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z")
+                        .cat-shop__catalogue-item-sale -40%
+                        .cat-shop__catalogue-item-info
+                            .cat-shop__catalogue-item-name Кот полосатый
+                            .cat-shop__catalogue-item-block
+                                .cat-shop__catalogue-item-color Коричневый окрас
+                                .cat-shop__catalogue-item-age
+                                    .cat-shop__catalogue-item-age-number 2 мес.
+                                    span Возраст
+                                .cat-shop__catalogue-item-leg
+                                    .cat-shop__catalogue-item-leg-number 4
+                                    span Кол-во лап
+                            .cat-shop__catalogue-item-price 30 000 руб.
+                        button(type='button').cat-shop__catalogue-item-btn Купить
+                    .cat-shop__catalogue-item
+                        img(src='img/cart-1.png' alt='cat-image').cat-shop__catalogue-item-image
+                        a(href='#').cat-shop__catalogue-item-like
+                            svg(viewBox="0 0 46 42" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z")
+                        .cat-shop__catalogue-item-info
+                            .cat-shop__catalogue-item-name Кот полосатый
+                            .cat-shop__catalogue-item-block
+                                .cat-shop__catalogue-item-color Коричневый окрас
+                                .cat-shop__catalogue-item-age
+                                    .cat-shop__catalogue-item-age-number 5 мес.
+                                    span Возраст
+                                .cat-shop__catalogue-item-leg
+                                    .cat-shop__catalogue-item-leg-number 4
+                                    span Кол-во лап
+                            .cat-shop__catalogue-item-price 40 000 руб.
+                        button(type='button' disabled).cat-shop__catalogue-item-btn.cat-shop__catalogue-item-btn--disabled Продан
+                    .cat-shop__catalogue-item
+                        img(src='img/cart-2.png' alt='cat-image').cat-shop__catalogue-item-image
+                        a(href='#').cat-shop__catalogue-item-like
+                            svg(viewBox="0 0 46 42" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z")
+                        .cat-shop__catalogue-item-info
+                            .cat-shop__catalogue-item-name Кот полосатый
+                            .cat-shop__catalogue-item-block
+                                .cat-shop__catalogue-item-color Коричневый окрас
+                                .cat-shop__catalogue-item-age
+                                    .cat-shop__catalogue-item-age-number 6 мес.
+                                    span Возраст
+                                .cat-shop__catalogue-item-leg
+                                    .cat-shop__catalogue-item-leg-number 4
+                                    span Кол-во лап
+                            .cat-shop__catalogue-item-price 20 000 руб.
+                        button(type='button').cat-shop__catalogue-item-btn Купить
+                    .cat-shop__catalogue-item
+                        img(src='img/cart-3.png' alt='cat-image').cat-shop__catalogue-item-image
+                        a(href='#').cat-shop__catalogue-item-like
+                            svg(viewBox="0 0 46 42" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z")
+                        .cat-shop__catalogue-item-info
+                            .cat-shop__catalogue-item-name Кот полосатый
+                            .cat-shop__catalogue-item-block
+                                .cat-shop__catalogue-item-color Коричневый окрас
+                                .cat-shop__catalogue-item-age
+                                    .cat-shop__catalogue-item-age-number 3 мес.
+                                    span Возраст
+                                .cat-shop__catalogue-item-leg
+                                    .cat-shop__catalogue-item-leg-number 4
+                                    span Кол-во лап
+                            .cat-shop__catalogue-item-price 25 000 руб.
+                        button(type='button').cat-shop__catalogue-item-btn Купить
+                    .cat-shop__catalogue-item
+                        img(src='img/cart-2.png' alt='cat-image').cat-shop__catalogue-item-image
+                        a(href='#').cat-shop__catalogue-item-like
+                            svg(viewBox="0 0 46 42" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z")
+                        .cat-shop__catalogue-item-sale -40%
+                        .cat-shop__catalogue-item-info
+                            .cat-shop__catalogue-item-name Кот полосатый
+                            .cat-shop__catalogue-item-block
+                                .cat-shop__catalogue-item-color Коричневый окрас
+                                .cat-shop__catalogue-item-age
+                                    .cat-shop__catalogue-item-age-number 8 мес.
+                                    span Возраст
+                                .cat-shop__catalogue-item-leg
+                                    .cat-shop__catalogue-item-leg-number 4
+                                    span Кол-во лап
+                            .cat-shop__catalogue-item-price 30 000 руб.
+                        button(type='button').cat-shop__catalogue-item-btn Купить
+                    .cat-shop__catalogue-item
+                        img(src='img/cart-1.png' alt='cat-image').cat-shop__catalogue-item-image
+                        a(href='#').cat-shop__catalogue-item-like
+                            svg(viewBox="0 0 46 42" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z")
+                        .cat-shop__catalogue-item-info
+                            .cat-shop__catalogue-item-name Кот полосатый
+                            .cat-shop__catalogue-item-block
+                                .cat-shop__catalogue-item-color Коричневый окрас
+                                .cat-shop__catalogue-item-age
+                                    .cat-shop__catalogue-item-age-number 4 мес.
+                                    span Возраст
+                                .cat-shop__catalogue-item-leg
+                                    .cat-shop__catalogue-item-leg-number 4
+                                    span Кол-во лап
+                            .cat-shop__catalogue-item-price 10 000 руб.
+                        button(type='button' disabled).cat-shop__catalogue-item-btn.cat-shop__catalogue-item-btn--disabled Продан
+                    .cat-shop__sort
+                button(type='button').cat-shop__more Показать еще 20
+

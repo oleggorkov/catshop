@@ -1,0 +1,48 @@
+.to-top__button {
+  width: 5.9rem;
+  height: 5.9rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  font-size: 1rem;
+  line-height: 1.2rem;
+  background: $main-blue;
+  visibility: hidden;
+
+  border: 0.2rem solid transparent;
+
+  transition: border ease 0.25s;
+
+  &:hover, &:focus{
+    border: 0.2rem solid #FFFFFF;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    top: 2.4rem;
+    left: 2.1rem;
+    color: #FFFFFF;
+    transform: rotate(135deg);
+    border-bottom: .3rem solid #FFFFFF;
+    border-left: .3rem solid #FFFFFF;
+  }
+}
+
+#top {
+  position: fixed;
+  z-index: 100;
+  bottom: 5rem;
+}
+
+#top.show {
+  opacity: 1;
+  visibility: visible;
+  right: calc(5%);
+}
